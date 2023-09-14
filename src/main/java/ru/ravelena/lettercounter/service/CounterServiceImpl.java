@@ -10,7 +10,6 @@ public class CounterServiceImpl implements CounterService {
     public Map<Character, Integer> count(String input) {
         Map<Character, Integer> result = new HashMap<>();
         input.chars().forEach(ch -> {
-            System.out.println(ch);
             int count = result.getOrDefault((char) ch, 0);
             result.put((char) ch, ++count);
         });
