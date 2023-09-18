@@ -23,7 +23,7 @@ public class CounterServiceImpl implements CounterService {
 
     @Override
     public Map<Character, Long> simpleCount(InputDto inputDto) {
-        return simpleCount(inputDto.getLine());
+        return simpleCount(inputDto.getText());
     }
 
     @Override
