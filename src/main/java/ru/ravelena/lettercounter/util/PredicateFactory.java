@@ -6,7 +6,7 @@ import java.util.function.Predicate;
 
 public final class PredicateFactory {
 
-     static Map<Condition, Predicate<Character>> predicates = new HashMap<>();
+     private static final Map<Condition, Predicate<Character>> predicates = new HashMap<>();
 
     static {
         predicates.put(Condition.LETTER, Character::isLetter);
